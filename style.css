@@ -3,13 +3,11 @@
 html {
   scroll-behavior: smooth;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-
 }
 
 /* navHeader */
@@ -26,6 +24,7 @@ html {
   border-bottom: 0;
   padding: 15px 10px;
 }
+#navHeader a{color: #fff;}
 
 #navHeader img,
 #features img {
@@ -43,6 +42,7 @@ html {
   color: #fff;
   font-weight: 700;
 }
+.navbar .dropdown-item{color: #000;}
 
 .navbar-toggler-icon {
   background-image: url(images/navbar-toggle.png);
@@ -85,13 +85,20 @@ nav.black {
 /* End- navbar */
 
 /* hero */
-.hero {
-  background: url(images/slider_1.jpg) no-repeat center;
-  background-size: cover;
+.heroMain,.heroRepair {
   height: 90vh;
   /* padding: 1000px; */
 }
+.heroMain {
+  background: url(images/slider_1.jpg) no-repeat center;
+  background-size: cover;
 
+}
+.heroRepair{
+  background: url(images/bg-services.jpg) no-repeat center;
+  background-size: cover;
+
+}
 /* END- hero */
 
 /* Features */
@@ -221,11 +228,46 @@ nav.black {
 }
 
 
+/* SIDE BRAND */
+
+.soc {
+  color: rgb(197 118 118);
+  position: fixed;
+  top: 50%;
+  right: -55px;
+  /* -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  z-index: 10;
+  border-radius: 15px 15px 0 0;
+  /* background-color: rgba(56,56,56,.66); */
+}
+.soc li {
+  list-style: none;
+}
+
+.soc a {
+  display: block;
+  text-align: center;
+  padding: 1px;
+  transition: all 0.3s ease;
 
 
-
-
-
+}
+/* .messenger {
+  background: #00c6ff ;
+  color: white;
+}
+.whatsapp {
+  background: #4FCE5D;
+  color: #4FCE5D;
+  font-size: 10px;
+} */
+.verticalText {
+  transform: rotate(-90deg);
+  padding: 20px;
+  margin: 20px;
+}
 
 
 

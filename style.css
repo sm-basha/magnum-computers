@@ -283,7 +283,7 @@ nav.black {
 
 /* FORM */
 form {
-  max-width: 50%;
+  /* max-width: 50%; */
   margin: 2rem auto;
   background: url(images/world-bg.png) no-repeat;
 }
@@ -339,11 +339,53 @@ textarea {
   width: 100%;
 }
 
+#map{
+  z-index: 3;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  border-width: 0px;
+  margin: 0px;
+  left: 0px;
+  top: 0px;
+  touch-action: pan-x pan-y;
+}
 .contact-form {
-  width: 50%;
+  /* width: 50%; */
   margin: 0 auto;
   padding: 40px;
 }
+#section .row{
+  /* background-color: teal; */
+}
+#section .row img{height: 20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contact-form .input-block {
   background-color: transparent;

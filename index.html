@@ -99,16 +99,17 @@
             <div class="row">
                 <div class="col-xl-0 col-md-10 col-sm-12">
                     <div class="icon"><a href="tel:- +919502720548">
-                        <img src="images/call.png" alt=""> &nbsp;
-                        <span>+91- 950 2720 548</span></a>
+                            <img src="images/call.png" alt=""> &nbsp;
+                            <span>+91- 950 2720 548</span></a>
                     </div>
                     <div class="icon"><a href="mailto:sm_basha@outlook.com">
-                        <img src="images/email.png" alt=""> &nbsp;
-                        <span>sm_basha@outlook.com</span></a>
+                            <img src="images/email.png" alt=""> &nbsp;
+                            <span>sm_basha@outlook.com</span></a>
                     </div>
-                    <div class="icon"><a href="https://www.google.com/maps/place/Porumamilla,+Andhra+Pradesh+516193/@15.008940, 78.989736,16z/data=!4m5!3m4!1s0x3bb4964c01744ca3:0x4dde40318b7997c3!8m2!3d14.9994124!4d78.9915188">
-                        <img src="images/home-icon-silhouette.png" alt=""> &nbsp;
-                        <span>Main Road, Porumamilla-516193</span></a>
+                    <div class="icon"><a
+                            href="https://www.google.com/maps/place/Porumamilla,+Andhra+Pradesh+516193/@15.008940, 78.989736,16z/data=!4m5!3m4!1s0x3bb4964c01744ca3:0x4dde40318b7997c3!8m2!3d14.9994124!4d78.9915188">
+                            <img src="images/home-icon-silhouette.png" alt=""> &nbsp;
+                            <span>Main Road, Porumamilla-516193</span></a>
                     </div>
                 </div>
 
@@ -301,60 +302,17 @@
 
 
 
-    <!-- FORM -->
-    <div id="section" class="divider">
-        <section class="contact-wrap">
-            <h1 class="text-center"> Send a Request to Us</h1>
-
-            <form id="submit-form" action="" class="contact-form">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label for="">First Name *</label>
-                            <input name="name" type="text" class="form-control" id="name" required="">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label for="">Last Name</label>
-                            <input name="lastName" type="text" class="form-control">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="input-block">
-                        <label for="">Phone *</label>
-                        <input name="phone" type="tel" maxlength="10" pattern="[6-9]{1}[0-9]{9}"
-                            title="Please enter a Valid Mobile number." id="phone" class="form-control" required="">
-                    </div>
-                </div>
-
-                <div class="">
-                    <div class="input-block">
-                        <label for="">Email</label>
-                        <input name="email" type="email" class="form-control" id="email">
-                    </div>
-                </div>
-                <div class="">
-                    <div class="input-block">
-                        <label for="">Message Subject</label>
-                        <input name="message" type="text" class="form-control" id="msg">
-                    </div>
-                </div>
-                <div class="">
-                    <div class="input-block textarea">
-                        <label for="">Drop your message here *</label>
-                        <textarea rows="4" type="text" class="form-control" required=""></textarea>
-                    </div>
-                </div>
-                <div class="">
-                    <button class="square-button">Send</button>
-                </div>
-            </form>
 
 
-        </section>
+    <!-- SIDE BRAND -->
+    <div class="soc">
+        <ul>
+            <li><a class="messenger" href="https://www.facebook.com/messages/t/928833913968971" target="_blank"><img
+                        src="images/messenger.png" alt=""></a></li>
+            <div class="verticalText"> <span>Chart with us</span></div>
+            <li><a class="whatsapp" href="https://web.whatsapp.com/send?phone=919502720548&text=Hi" target="_blank"><img
+                        src="images/whatsapp.png" alt=""></a></li>
+        </ul>
     </div>
 
     <!-- FOOTER -->
@@ -472,72 +430,7 @@
     </script>
 
 
-    <!-- FORM-SCRIPT -->
-    <script>
-        $(document).ready(function () {
 
-            //material contact form
-            $('.contact-form').find('.form-control').each(function () {
-                var targetItem = $(this).parent();
-                if ($(this).val()) {
-                    $(targetItem).find('label').css({
-                        'top': '10px',
-                        'fontSize': '14px'
-                    });
-                }
-            })
-            $('.contact-form').find('.form-control').focus(function () {
-                $(this).parent('.input-block').addClass('focus');
-                $(this).parent().find('label').animate({
-                    'top': '10px',
-                    'fontSize': '14px'
-                }, 300);
-            })
-            $('.contact-form').find('.form-control').blur(function () {
-                if ($(this).val().length == 0) {
-                    $(this).parent('.input-block').removeClass('focus');
-                    $(this).parent().find('label').animate({
-                        'top': '25px',
-                        'fontSize': '18px'
-                    }, 300);
-                }
-            })
-
-        });
-    </script>
-    <!-- FORM-mailto-SCRIPT -->
-    <script>
-        $("#submit-form").submit((e) => {
-            e.preventDefault()
-            $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbzbnkUF1nRADcJwADHR6_GgvGZIe7TXCW2nZ8T93g/exec",
-                data: $("#submit-form").serialize(),
-                method: "post",
-
-                success: function (response) {
-                    swal("Successfully done.", {
-                        title: "Your request has been recorded.",
-                        text: "We will get back to you shortly",
-                        icon: "success",
-                        button: "OK",
-                    }).then(okay => {
-                        if (okay) {
-                            window.location.reload();
-                        }
-                    });
-
-                },
-                error: function (err) {
-                    swal({
-                        title: "Fields Empty!",
-                        text: "Please check the missing fields.",
-                        icon: "warning",
-                        button: "Close",
-                    });
-                }
-            })
-        })
-    </script>
 
 
     <script src="VenoBox-master/venobox/venobox.min.js"></script>

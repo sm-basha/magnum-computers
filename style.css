@@ -533,9 +533,7 @@ textarea {
 /* END - FORM */
 
 /* ////BLOG PAGE///// */
-/* .card{
-  height: 80%;
-} */
+.contactus img{height: 85vh;}
 
 .session .container {
   max-width: 70%;
@@ -550,7 +548,11 @@ textarea {
   font-size: 0.8rem;
 }
 
-
+.blogMtr {
+  padding: 5%;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+}
 
 
 

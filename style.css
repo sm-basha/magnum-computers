@@ -109,6 +109,13 @@ nav.black {
   background-size: cover;
 
 }
+.tasks{background-color: #eee;}
+.brands .item img{
+  height: 5rem;
+  width: auto !important;
+  margin: 0 auto;
+
+}
 
 /* END- hero */
 
@@ -164,11 +171,21 @@ nav.black {
 /* END- process */
 
 /* services */
-.section {
+.contactDetails {
   padding-top: 100px;
   padding-bottom: 100px;
   color: #fff;
 }
+.tasks{padding: 100px 0;}
+.tasks ul {
+  display: inline-block;
+  margin: 0 2rem;
+}
+.tasks li {
+  list-style: none;
+  margin: 20px 0;
+}
+.tasks img{height: 20px;}
 
 .cm-services .nav-link {
   border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -335,23 +352,23 @@ textarea {
   }
 }
 
-#section h2 {
+#contactDetails h2 {
   margin-bottom: 25px;
   position: relative;
   display: block;
 }
 
-#section p a {
+#contactDetails p a {
   color: #00b16a;
   text-decoration: none;
 }
 
-#section .wrap {
+#contactDetails .wrap {
   text-align: center;
   width: 100%;
 }
 
-#section .box {
+#contactDetails .box {
   text-align: center;
   margin: 5% 0 0 0;
   width: 100%;
@@ -374,7 +391,7 @@ textarea {
   background-color: rgba(27, 13, 230, 0.6);
 }
 
-#section .row img {
+#contactDetails .row img {
   height: 20px;
 }
 
@@ -533,6 +550,16 @@ textarea {
 /* END - FORM */
 
 /* ////BLOG PAGE///// */
+
+.blog-img{
+  text-align: center;
+  color: #fff;
+  background: url(images/blog.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
 .contactus img{height: 85vh;}
 
 .session .container {
@@ -844,3 +871,28 @@ textarea {
   background-size: 3px 3px;
   z-index: 2;
 }
+
+
+/* MEDIA QUERY */
+@media(max-width:780px) and (min-width:202px) {
+  #features,#navHeader,.navbar{text-align: center;font-size: 0.8rem;}
+  .heroMain, .heroRepair,.contactus img{height: 50vh;}
+  .heroMain h3, .heroRepair h3,#process h3,.brands h2,
+  .contactpara h1,#contactDetails h2{font-size: 1.5rem;}
+  .heroMain h2,.heroRepair h2,#process h1,
+  .tab-content h2{font-size: 2.3rem;}
+  .heroMain p,.heroRepair p,.heroRepair .btn,
+  .heroMain .btn,.soc,#process p,#repairs .nav-link,.tab-content p,
+  .tab-content ul,.brands ul,.contactpara p,
+  #contactDetails p{font-size: 0.8rem;}
+  #features .box{margin-bottom: 1rem;}
+  .addBox .col-1{margin-left: 20px;}
+  .divider.container {max-width: 100%;}
+  #submit-form label,.contact-form .input-block .form-control,
+  .contact-form .square-button{font-size: 1rem;}
+}
+/*screen resolutions lower than 620px*/
+@media all and (max-width: 1180px) {}
+@media (min-width: 768px) {}
+  @media (max-width: 868px) {}
+    @media (max-width: 568px) {}

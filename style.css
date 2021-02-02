@@ -877,8 +877,8 @@ textarea {
 /* MEDIA QUERY */
 @media(max-width:780px) and (min-width:202px) {
   #features,#navHeader,.navbar{text-align: center;font-size: 0.8rem;}
-  
-  .heroMain, .heroRepair,.contactus img{height: 50vh;}
+  .heroMain, .heroRepair{height: 50vh;}
+  .contactus img{height: 40vh;}
   .heroMain h3, .heroRepair h3,#process h3,.brands h2,
   .contactpara h1,#contactDetails h2{font-size: 1.5rem;}
   .heroMain h2,.heroRepair h2,#process h1,

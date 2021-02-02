@@ -109,12 +109,8 @@ nav.black {
   background-size: cover;
 
 }
-
-.tasks {
-  background-color: #eee;
-}
-
-.brands .item img {
+.tasks{background-color: #eee;}
+.brands .item img{
   height: 5rem;
   width: auto !important;
   margin: 0 auto;
@@ -175,33 +171,22 @@ nav.black {
 /* END- process */
 
 /* services */
-.service-item {
-  color: #eee;
-}
-
+.service-item{  color: #eee;}
 .contactDetails {
   padding-top: 100px;
   padding-bottom: 100px;
   color: #fff;
 }
-
-.tasks {
-  padding: 100px 0;
-}
-
+.tasks{padding: 100px 0;}
 .tasks ul {
   display: inline-block;
   margin: 0 2rem;
 }
-
 .tasks li {
   list-style: none;
   margin: 20px 0;
 }
-
-.tasks img {
-  height: 20px;
-}
+.tasks img{height: 20px;}
 
 .cm-services .nav-link {
   border-bottom: 1px solid rgba(255, 255, 255, .3);
@@ -567,7 +552,7 @@ textarea {
 
 /* ////BLOG PAGE///// */
 
-.blog-img {
+.blog-img{
   text-align: center;
   color: #fff;
   background: url(images/blog.jpg) no-repeat;
@@ -576,9 +561,7 @@ textarea {
   padding: 100px 0;
 }
 
-.contactus img {
-  height: 85vh;
-}
+.contactus img{height: 85vh;}
 
 .session .container {
   max-width: 70%;
@@ -595,7 +578,7 @@ textarea {
 
 .blogMtr {
   padding: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #fff;
 }
 
@@ -848,7 +831,7 @@ textarea {
 /* END: OWL */
 
 /* //SALES - PAGE// */
-#sales {
+#sales{
   color: #fff;
   z-index: 999;
   position: absolute;
@@ -856,18 +839,15 @@ textarea {
   right: 0;
   margin-top: 12%;
 }
-
-#sales h5 {
-  font-size: 1.2rem;
+.salesImg img{height: 150px;}
+#sales h5{font-size: 1.2rem;
+  font-family: 'Potta One', cursive;
+}
+.cs h1{font-size: 8rem;
   font-family: 'Potta One', cursive;
 }
 
-.cs h1 {
-  font-size: 8rem;
-  font-family: 'Potta One', cursive;
-}
-
-.cs .icon img {
+.cs .icon img{
   height: 2rem;
   margin: 2rem 1.2rem 0;
 }
@@ -878,13 +858,11 @@ textarea {
   width: 100%;
   height: 100vh;
 }
-
 .bg-video-wrap video {
   min-width: 100%;
   min-height: 100vh;
   z-index: -1;
 }
-
 .overlay {
   width: 100%;
   height: 100vh;
@@ -899,87 +877,31 @@ textarea {
 
 /* MEDIA QUERY */
 @media(max-width:780px) and (min-width:202px) {
-
-  #features,
-  #navHeader,
-  .navbar {
-    text-align: center;
-    font-size: 0.8rem;
-  }
-
-  .heroMain,
-  .heroRepair {
-    height: 50vh;
-  }
-
-  .contactus img {
-    height: 40vh;
-  }
-
-  .heroMain h3,
-  .heroRepair h3,
-  #process h3,
-  .brands h2,
-  .contactpara h1,
-  #contactDetails h2 {
-    font-size: 1.5rem;
-  }
-
-  .heroMain h2,
-  .heroRepair h2,
-  #process h1,
-  .tab-content h2 {
-    font-size: 2.3rem;
-  }
-
-  .heroMain p,
-  .heroRepair p,
-  .heroRepair .btn,
-  .heroMain .btn,
-  .soc,
-  #process p,
-  #repairs .nav-link,
-  .tab-content p,
-  .tab-content ul,
-  .brands ul,
-  .contactpara p,
-  #contactDetails p {
-    font-size: 0.8rem;
-  }
-
-  #features .box {
-    padding: 1rem 0.3rem;
-  }
-
-  #features .container {
-    padding: 0;
-  }
-
-  #features .col-4 {
-    padding-left: 2px;
-    padding-right: 0;
-  }
-
-  .addBox .col-1 {
-    margin-left: 20px;
-  }
-
-  .divider.container {
-    max-width: 100%;
-  }
-
-  #submit-form label,
-  .contact-form .input-block .form-control,
-  .contact-form .square-button {
-    font-size: 1rem;
-  }
+  #features,#navHeader,.navbar{text-align: center;font-size: 0.8rem;}
+  .heroMain, .heroRepair{height: 50vh;}
+  .contactus img{height: 40vh;}
+  .heroMain h3, .heroRepair h3,#process h3,.brands h2,
+  .contactpara h1,#contactDetails h2,#sales h3{font-size: 1.5rem;}
+  .heroMain h2,.heroRepair h2,#process h1,
+  .tab-content h2, #sales h1{font-size: 2.3rem;}
+  .heroMain p,.heroRepair p,.heroRepair .btn,
+  .heroMain .btn,.soc,#process p,#repairs .nav-link,.tab-content p,
+  .tab-content ul,.brands ul,.contactpara p,
+  #contactDetails p,#sales h5{font-size: 0.8rem;}
+  #features .box{padding: 1rem 0.3rem;}
+  #features .container{padding: 0;}
+  #features .col-4{padding-left: 2px;padding-right: 0;}
+  .addBox .col-1{margin-left: 20px;}
+  .divider.container {max-width: 100%;}
+  #submit-form label,.contact-form .input-block .form-control,
+  .contact-form .square-button{font-size: 1rem;}
+  #sales .col-2 img{height: 150px;}
+  #sales{padding-top: 150px;}
+  .cs .icon img{height: 1rem; margin: 2rem 0.5rem ;}
+  .bg-video-wrap video{width: 100%;min-height: auto;}
 }
-
 /*screen resolutions lower than 620px*/
 @media all and (max-width: 1180px) {}
-
 @media (min-width: 768px) {}
-
-@media (max-width: 868px) {}
-
-@media (max-width: 568px) {}
+  @media (max-width: 868px) {}
+    @media (max-width: 568px) {}

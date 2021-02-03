@@ -881,24 +881,26 @@ textarea {
   .heroMain, .heroRepair{height: 50vh;}
   .contactus img{height: 40vh;}
   .heroMain h3, .heroRepair h3,#process h3,.brands h2,
-  .contactpara h1,#contactDetails h2,#sales h3{font-size: 1.5rem;}
+  .contactpara h1,#contactDetails h2,#sales h3,.blogMtr h1{font-size: 1.5rem;}
   .heroMain h2,.heroRepair h2,#process h1,
   .tab-content h2, #sales h1{font-size: 2.3rem;}
   .heroMain p,.heroRepair p,.heroRepair .btn,
   .heroMain .btn,.soc,#process p,#repairs .nav-link,.tab-content p,
   .tab-content ul,.brands ul,.contactpara p,
-  #contactDetails p,#sales h5{font-size: 0.8rem;}
+  #contactDetails p,#sales h5,.blogMtr .btn{font-size: 0.8rem;}
+  .blogMtr .btn{margin-bottom: 0.6rem;}
   #features .box{padding: 1rem 0.3rem;}
   #features .container{padding: 0;}
   #features .col-4{padding-left: 2px;padding-right: 0;}
   .addBox .col-1{margin-left: 20px;}
-  .divider.container {max-width: 100%;}
+  .divider.container,.session .container {max-width: 100%;}
   #submit-form label,.contact-form .input-block .form-control,
-  .contact-form .square-button{font-size: 1rem;}
+  .contact-form .square-button,.blogMtr h1{font-size: 1rem;}
   #sales .col-2 img{height: 150px;}
   #sales{padding-top: 150px;}
   .cs .icon img{height: 1rem; margin: 2rem 0.5rem ;}
   .bg-video-wrap video{width: 100%;min-height: auto;}
+  .session .col-md-4{padding-left: 0;}
 }
 /*screen resolutions lower than 620px*/
 @media all and (max-width: 1180px) {}

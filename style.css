@@ -244,11 +244,11 @@ nav.black {
 /* SHOP */
 
 #shop .item {
-  border: 2px solid #001f3f;
+  border: 2px solid #eee;
 }
 
 #shop img {
-  height: 280px;
+  height: 250px;
   width: auto;
 
 }
@@ -257,7 +257,8 @@ nav.black {
   background-color: #eee;
   padding: 1rem 0;
 }
-
+#shop .saleItem{padding: 15px;}
+.pull-right{float: right;margin-top: 7px; color: rgb(0, 123, 255);}
 
 /* SIDE BRAND */
 
@@ -689,6 +690,9 @@ textarea {
   font: inherit;
 }
 
+
+/* ------------------ */
+
 .owl-carousel.owl-loaded {
   display: block;
 }
@@ -883,11 +887,11 @@ textarea {
   .heroMain h3, .heroRepair h3,#process h3,.brands h2,
   .contactpara h1,#contactDetails h2,#sales h3,.blogMtr h1{font-size: 1.5rem;}
   .heroMain h2,.heroRepair h2,#process h1,
-  .tab-content h2, #sales h1{font-size: 2.3rem;}
+  .tab-content h2, #sales h1,#shop h1{font-size: 2.3rem;}
   .heroMain p,.heroRepair p,.heroRepair .btn,
   .heroMain .btn,.soc,#process p,#repairs .nav-link,.tab-content p,
   .tab-content ul,.brands ul,.contactpara p,
-  #contactDetails p,#sales h5,.blogMtr .btn{font-size: 0.8rem;}
+  #contactDetails p,#sales h5,.blogMtr .btn, #shop p, #shop .mt-3{font-size: 0.8rem;}
   .blogMtr .btn{margin-bottom: 0.6rem;}
   #features .box{padding: 1rem 0.3rem;}
   #features .container{padding: 0;}
